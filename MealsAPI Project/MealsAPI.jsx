@@ -2,10 +2,11 @@
 import axios from "axios"
 import React,{ useState, useEffect } from "react";
 import "../style.css";
-
+//  Fetched an external Meal API for a beginner react project.
 
 const MealsAPI = () => {
     const [items, setitems] = useState([]);
+    
 
     useEffect(() => {
     axios
@@ -17,6 +18,7 @@ const MealsAPI = () => {
       .catch((err) => {
         console.log(err);
       });
+        
   }, []);
 
 
